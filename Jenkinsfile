@@ -4,6 +4,7 @@ pipeline {
            label "zap-agent2"
            defaultContainer "zap"
         }
+    }
  
     stages {
         stage('Inicio') {
