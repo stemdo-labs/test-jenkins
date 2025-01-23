@@ -18,6 +18,9 @@ pipeline {
         stage('Preparación') {
             steps {
                 echo 'Preparando los recursos...'
+                sh """
+                ls /home/jenkins/agent
+                """
             }
         }
         stage('Pruebas') {
