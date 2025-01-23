@@ -1,15 +1,30 @@
 pipeline {
     agent any
-    
+ 
     stages {
-        stage('Load propeties') {
+        stage('Inicio') {
             steps {
-                script { 
-                    sh echo HOLA
-                    ls
-                    pwd
-                }
+                echo 'Iniciando la pipeline...'
+                ls
+                pwd
+            }
+        }
+        stage('Preparación') {
+            steps {
+                echo 'Preparando los recursos...'
+            }
+        }
+        stage('Pruebas') {
+            steps {
+                echo 'Ejecutando pruebas...'
+            }
+        }
+        stage('Finalización') {
+            steps {
+                echo 'Pipeline completada exitosamente.'
             }
         }
     }
 }
+
+ 
