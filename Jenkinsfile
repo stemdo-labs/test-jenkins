@@ -1,6 +1,5 @@
 pipeline {
-    agent {
-    }
+    agent any
 
     environment {
         REPORT_DIR = '/zap/wrk'
