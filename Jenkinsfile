@@ -1,7 +1,7 @@
 pipeline {
     agent {
         kubernetes {
-           inheritFrom ['CLAUDIA']
+           inheritFrom 'CLAUDIA'
            defaultContainer "zap"
         }
     }
