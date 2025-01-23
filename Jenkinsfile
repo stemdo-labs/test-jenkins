@@ -5,8 +5,10 @@ pipeline {
         stage('Inicio') {
             steps {
                 echo 'Iniciando la pipeline...'
-                sh ls
-                sh pwd
+                sh """
+                pwd
+                ls
+                """
             }
         }
         stage('Preparación') {
